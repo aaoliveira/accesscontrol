@@ -38,7 +38,6 @@ senha - admin
 Assim também para o usuário manager com senha manager.
 
 Acesse
-
 http://localhost/posts/users
 Ignore as duas mensagens de erro acima, pois não atrapalham e logo em seguida corrigiremos.
 
