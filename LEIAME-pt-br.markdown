@@ -20,20 +20,20 @@ https://github.com/ribafs/accesscontrol
 - Se estiver num Linux ou similar precisa atentar para as permissões dos arquivos. Após a operação acima precisa permitir que o usuário do Apache escreva em todos os diretórios e arquivos copiados.
 Esse menu mostra somente o que o usuário tem acesso, filtrando o que não tem.
 
-## TROCAR HASH DAS SENHAS
+## Trocar o Hash das Senhas
 
-Quando mudamos o servidor do banco o hash das senhas dos usuários não são mais reconhecidos.
-Precisamos editar os usuários e trocar as senhas de cada usuário para que voltem a funcionar.
-
-Acesse
-http://localhost/posts/users
-Ignore as duas mensagens de erro acima, pois não atrapalham e logo desaparecerão.
+Precisamos editar os usuários e trocar as senhas de cada usuário.
 Originalmente coloquei assim:
 login - admin
 senha - admin
 Assim também para o usuário manager com senha manager.
 
-Edite e apenas repira admin para o admin e manager para o manager e Salve.
+Acesse
+
+http://localhost/posts/users
+Ignore as duas mensagens de erro acima, pois não atrapalham e logo em seguida corrigiremos.
+
+Edite e apenas repira admin para o usuário admin e manager para o manager então Salve.
 
 
 ## Adicionar ao AppController.php:
