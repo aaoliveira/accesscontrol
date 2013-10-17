@@ -20,10 +20,11 @@ https://github.com/ribafs/accesscontrol
 - Se estiver num Linux ou similar precisa atentar para as permissões dos arquivos. Após a operação acima precisa permitir que o usuário do Apache escreva em todos os diretórios e arquivos copiados.
 Esse menu mostra somente o que o usuário tem acesso, filtrando o que não tem.
 
-## Trocar o Hash das Senhas
+## Atualizar as Senhas
 
-Precisamos editar os usuários e trocar as senhas de cada usuário.
-Originalmente coloquei assim:
+Precisamos editar os usuários e trocar as senhas de cada usuário (pelo aplicativo e nunca pelo banco de dados)
+
+Como este é somente um aplicativo de testes nomeei assim:
 login - admin
 senha - admin
 Assim também para o usuário manager com senha manager.
