@@ -19,6 +19,20 @@ https://github.com/ribafs/accesscontrol
 			<?php echo $this->element('menutopo');//Aqui?>
 Este menu mostra somente o que o usuário tem acesso, filtrando o que não tem.
 
+## TROCAR HASH DAS SENHAS
+
+Quando mudamos o servidor do banco o hash das senhas dos usuários não são mais reconhecidos.
+Precisamos editar os usuários e trocar as senhas de cada usuário para que voltem a funcionar.
+
+Acesse
+http://localhost/posts/users
+Originalmente coloquei assim:
+login - admin
+senha - admin
+Assim também para o usuário manager com senha manager.
+
+Edite e apenas repira admin para o admin e manager para o manager e Salve.
+
 
 ## Adicionar ao AppController.php:
 
@@ -59,19 +73,6 @@ Este menu mostra somente o que o usuário tem acesso, filtrando o que não tem.
 Já pode testar. Acesse:
 http://localhost/posts
 E tente acessar os actions add ou edit, por exemplo.
-
-
-## TROCAR HASH DAS SENHAS
-
-Quando mudamos o servidor do banco o hash das senhas dos usuários não são mais reconhecidos.
-Precisamos editar as senhas de cada usuário para que voltem a funcionar.
-Comente todo o conteúdo (com /* e *	/) do AppController.php para continuar (ao final remova o comentário).
-Acesse
-http://localhost/posts/users
-
-Edite a senha do admin e a do manager. Apenas repira admin para o admin e manager para o manager e Salve.
-
-Remova o comentário do AppController e continue.
 
 
 ## Cadastrando as Permissões
