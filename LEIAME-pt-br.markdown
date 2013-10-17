@@ -109,7 +109,8 @@ Atente para não esquecer nenhum privilégio. Os que esquecer ou deixar de fora 
 
 ## Actions Não Cadastrados
 
-Os actions não cadastrados mostrarão a mensagem "Privilégio não cadastrado!".
+Os actions não cadastrados mostrarão a mensagem "Privilégio não cadastrado!" mas permitirão o acesso.
+Quando foi cadastrado para outro usuário aparecerá a mensagem mas negará o acesso
 Basta que cadastre este action para o usuário manager que a mensagem desaparecerá.
 
 
