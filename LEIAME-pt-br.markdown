@@ -12,7 +12,6 @@ Adicionei mais uma característica importante: um menu de topo que mostra ao usu
 ## Requisitos
 
 CakePHP 2.x
-
 Não use tabelas com nomes users, groups nem privileges. Caso já tenha, precisará fazer as adaptações
 
 
