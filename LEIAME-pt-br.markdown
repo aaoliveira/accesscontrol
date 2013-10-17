@@ -4,21 +4,29 @@ Objetivo - controlar o acesso dos usuários ao aplicativo. Ele controla o acesso
 O controle associa o grupo do usuário ao action, gravando numa tabela. Quando cadastramos um grupo com um action, o componente garantirá acesso para todos os usuários do grupo nesse action.
 Adicionei mais uma característica importante: um menu de topo que mostra ao usuário do site somente os controllers que ele tem acesso. Se não logado mostrará apenas o que foi liberado para o público no AppController pelo Auth allow.
 
+
 ## Requisitos
 
 Não use tabelas com nomes users, groups nem privileges. Caso já tenha, precisará fazer as adaptações
 
+
+## Alerta
+
+O indicado é instalar pela primeira vez localmente, apenas para testar e ver como funciona.
+Antes de instalar em produção, recomenda-se um backup completo do seu aplicativo (todos os arquivos e todo o banco) antes de continuar.
+
+
 ## Passos:
 
 - Efetuar o download
-https://github.com/ribafs/accesscontrol
-- Baixar, descompactar
-- Importar para seu banco o script accesscontrol.sql, que contem as tabelas users, groups e privileges
-- Caso seu aplicativo não seja um aplicativo de testes, recomenda-se um backup completo do seu aplicativo (todos os arquivos e todo o banco) antes de continuar
+	https://github.com/ribafs/accesscontrol
+- Descompactar
 - Descompacte o arquivo AccessControl.zip e copie todo o conteúdo para dentro da pasta app/ da sua aplicação. A pasta View traz uma pasta Layout com um default.php. É util que integre o Element/menu com o seu layout, caso não sobrescreva o seu default.php. Segue também um element integrado ao layout default.php, que mostra um pequeno menu no topo. Para integrar ao seu layout adicione a linha seguinte abaixo da div header:
 			<?php echo $this->element('menutopo');//Aqui?>
 - Se estiver num Linux ou similar precisa atentar para as permissões dos arquivos. Após a operação acima precisa permitir que o usuário do Apache escreva em todos os diretórios e arquivos copiados.
-Esse menu mostra somente o que o usuário tem acesso, filtrando o que não tem.
+	Esse menu mostra somente o que o usuário tem acesso, filtrando o que não tem.
+- Importar para seu banco o script accesscontrol.sql, que contem as tabelas users, groups e privileges
+
 
 ## Atualizar as Senhas
 
@@ -71,6 +79,7 @@ Edite e apenas repira admin para o usuário admin e manager para o manager entã
 	}
 
 
+
 ## PRONTO
 
 Já pode testar. Acesse:
@@ -87,6 +96,7 @@ http://localhost/posts/privileges
 
 Atente para não esquecer nenhum privilégio. Os que esquecer ou deixar de fora irão permitir acesso sem login.
 
+
 ## Actions Não Cadastrados
 
 Os actions não cadastrados mostrarão a mensagem "Privilégio não cadastrado!".
@@ -101,5 +111,4 @@ Após instalar e configurar o AccessControl faça os ajustes necessário no Elem
 ## Licença
 
 Este componente é distribuído com a mesma licença do CakePHP, que é a licença MIT.
-
 
