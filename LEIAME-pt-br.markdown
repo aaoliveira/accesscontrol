@@ -2,6 +2,7 @@
 
 Objetivo - controlar o acesso dos usuários ao aplicativo. Ele controla o acesso a cada action de cada controller.
 O controle associa o grupo do usuário ao action, gravando numa tabela. Quando cadastramos um grupo com um action, o componente garantirá acesso para todos os usuários do grupo nesse action.
+Adicionei mais uma característica importante: um menu de topo que mostra ao usuário do site somente os controllers que ele tem acesso. Se não logado mostrará apenas o que foi liberado para o público no AppController pelo Auth allow.
 
 ## Requisitos
 
