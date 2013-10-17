@@ -17,7 +17,8 @@ https://github.com/ribafs/accesscontrol
 - Caso seu aplicativo não seja um aplicativo de testes, recomenda-se um backup completo do seu aplicativo (todos os arquivos e todo o banco) antes de continuar
 - Descompacte o arquivo AccessControl.zip e copie todo o conteúdo para dentro da pasta app/ da sua aplicação. A pasta View traz uma pasta Layout com um default.php. É util que integre o Element/menu com o seu layout, caso não sobrescreva o seu default.php. Segue também um element integrado ao layout default.php, que mostra um pequeno menu no topo. Para integrar ao seu layout adicione a linha seguinte abaixo da div header:
 			<?php echo $this->element('menutopo');//Aqui?>
-Este menu mostra somente o que o usuário tem acesso, filtrando o que não tem.
+- Se estiver num Linux ou similar precisa atentar para as permissões dos arquivos. Após a operação acima precisa permitir que o usuário do Apache escreva em todos os diretórios e arquivos copiados.
+Esse menu mostra somente o que o usuário tem acesso, filtrando o que não tem.
 
 ## TROCAR HASH DAS SENHAS
 
