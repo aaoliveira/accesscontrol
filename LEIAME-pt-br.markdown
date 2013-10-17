@@ -33,12 +33,16 @@ Antes de instalar em produção, recomenda-se um backup completo do seu aplicati
 Precisamos editar os usuários e trocar as senhas de cada usuário (pelo aplicativo e nunca pelo banco de dados)
 
 Como este é somente um aplicativo de testes nomeei assim:
-login - admin
-senha - admin
+
+- login - admin
+- senha - admin
+
 Assim também para o usuário manager com senha manager.
 
 Acesse
+
 http://localhost/posts/users
+
 Ignore as duas mensagens de erro acima, pois não atrapalham e logo em seguida corrigiremos.
 
 Edite e apenas repira admin para o usuário admin e manager para o manager então Salve.
