@@ -2,6 +2,7 @@
 
 Goal - to control user access to application. It controls access to each action of each controller.
 The setting are recorded in a table. 
+Added another important feature: a top menu that shows to user only controllers that he has access. If not logged only show what has been released to the public in the AppController Auth allow.
 
 ## Requirements
 
