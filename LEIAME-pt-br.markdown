@@ -26,6 +26,7 @@ Precisamos editar os usuários e trocar as senhas de cada usuário para que volt
 
 Acesse
 http://localhost/posts/users
+Ignore as duas mensagens de erro acima, pois não atrapalham e logo desaparecerão.
 Originalmente coloquei assim:
 login - admin
 senha - admin
