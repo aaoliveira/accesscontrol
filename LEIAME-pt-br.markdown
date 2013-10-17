@@ -51,10 +51,11 @@ http://localhost/posts/users
 
 Ignore as duas mensagens de erro acima, pois não atrapalham e logo em seguida corrigiremos.
 
-Edite e apenas repira admin para o usuário admin e manager para o manager então Salve.
+Edite e apenas repita admin para o usuário admin e manager para o manager então Salve.
 
 
 ## Adicionar ao AppController.php:
+Adapte abaixo: de posts para o seu controller, caso sua aplicação use outro controller como o principal
 
 	public $components = array(
 		'Session','AccessControl',
